@@ -1,0 +1,57 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Environment variables / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Alembic ---
+# (keep migration scripts, ignore nothing here — versions/ should be tracked)
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+server.log
+
+# --- Testing ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Vector store / uploads (generated at runtime) ---
+chroma_store/
+uploads/
+
+# --- Database (local testing only) ---
+*.db
+*.sqlite3
+
+# --- Build artifacts ---
+*.egg-info/
+dist/
+build/
+
+# --- Frontend (once added) ---
+node_modules/
+frontend/dist/
+frontend/.env

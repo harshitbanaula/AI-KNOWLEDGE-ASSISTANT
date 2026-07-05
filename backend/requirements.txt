@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+sqlalchemy
+asyncpg
+alembic
+python-dotenv
+
+# --- Auth ---
+python-jose[cryptography]==3.3.0
+passlib==1.7.4
+bcrypt==4.0.1          # pinned: passlib 1.7.4 breaks on bcrypt>=4.1 (removed __about__)
+python-multipart==0.0.20
